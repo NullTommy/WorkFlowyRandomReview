@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (results && results[0] && results[0].result) {
           const hrefs = results[0].result;
           if (hrefs.length > 0) {
-            alert(hrefs.length);
+            // alert(hrefs.length);
             // 随机选择一个href
             const randomIndex = Math.floor(Math.random() * hrefs.length);
             const selectedHref = hrefs[randomIndex];
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }, 1000); // 等待1秒让滚动完成
     } catch (error) {
-      console.error('Error:', error);
+      // console.error('Error:', error);
       alert('Error getting href attributes: ' + error.message);
     }
   }

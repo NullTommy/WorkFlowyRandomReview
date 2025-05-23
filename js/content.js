@@ -36,7 +36,7 @@ async function getRandomHref() {
       const hrefs = Array.from(links).map(link => link.getAttribute('href'));
       
       if (hrefs.length > 0) {
-        alert(hrefs.length);
+        // alert(hrefs.length);
         // 随机选择一个href
         const randomIndex = Math.floor(Math.random() * hrefs.length);
         const selectedHref = hrefs[randomIndex];
@@ -55,7 +55,7 @@ async function getRandomHref() {
       }
     }, 1000); // 等待1秒让滚动完成
   } catch (error) {
-    console.error('Error:', error);
+    // console.error('Error:', error);
     alert('Error getting href attributes: ' + error.message);
   }
 }
